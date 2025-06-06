@@ -1,0 +1,104 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Introducción a los Lentes de Sol</title>
+</head>
+
+<!-- FONDO CON FOTO DIFUSA (JPG) + COLOR DE RESPALDO -->
+<body background="images/fondo-desenfocado.jpg" bgcolor="#f9f9f9" text="#222222" link="#0066cc" vlink="#663399">
+
+    <!-- TEXTO EN MOVIMIENTO -->
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+        Descubre la fascinante historia de los lentes de sol — ¡protección, moda y ciencia en un solo accesorio!
+    </marquee>
+
+    <!-- TÍTULO PRINCIPAL -->
+    <h1 align="center">
+        <font face="Helvetica, Arial, sans-serif" size="6" color="#111111">
+            Lentes de Sol: Origen y Evolución
+        </font>
+    </h1>
+
+    <!-- TABLA INVISIBLE PARA COLUMNAS -->
+    <table width="90%" align="center" border="0" cellspacing="0" cellpadding="10">
+        <tr>
+            <!-- COLUMNA DE TEXTO -->
+            <td width="60%" valign="top">
+                <font face="Georgia, serif" size="4">
+                    <p>
+                        Los <b>lentes de sol</b> no siempre fueron un accesorio de moda. Su origen se remonta a las civilizaciones inuit, que usaban visores de hueso para protegerse del reflejo de la nieve. Con el tiempo, los avances ópticos y la demanda por proteger la vista de la radiación ultravioleta impulsaron la evolución tecnológica y estética de este imprescindible accesorio.
+                    </p>
+                    <p>
+                        Hoy, los lentes de sol combinan innovación y estilo: desde filtros polarizados hasta recubrimientos antirreflejantes, los materiales y diseños continúan adaptándose tanto a las necesidades de salud visual como a las tendencias de la moda.
+                    </p>
+                </font>
+
+                <!-- LISTA NO NUMÉRICA CON ENLACES -->
+                <font face="Verdana, Geneva, sans-serif" size="3">
+                    <h2>Lee más sobre:</h2>
+                    <ul>
+                        <li><a href="https://es.wikipedia.org/wiki/Gafas_de_sol" target="_blank">Historia completa de los lentes de sol</a></li>
+                        <li><a href="https://www.healthline.com/health/eye-health/uv-protection-sunglasses" target="_blank">Protección UV y salud ocular</a></li>
+                        <li><a href="https://www.britannica.com/technology/polarized-light" target="_blank">Principio de polarización</a></li>
+                    </ul>
+                </font>
+
+                <!-- LISTA NUMÉRICA -->
+                <h2>Principales hitos históricos</h2>
+                <ol>
+                    <li>Siglo XII: Pueblos inuit usan visores de hueso o marfil.</li>
+                    <li>1752: James Ayscough experimenta con lentes teñidas para mejorar la visión.</li>
+                    <li>1929: Sam Foster lanza gafas de sol de producción masiva en EE.&nbsp;UU.</li>
+                    <li>1936: Edwin H. Land introduce filtros polarizados a base de Polaroid.</li>
+                    <li>Siglo XXI: Lentes fotocromáticos y materiales ultraligeros.</li>
+                </ol>
+            </td>
+
+            <!-- COLUMNA DE IMÁGENES -->
+            <td width="40%" valign="top">
+                <!-- IMAGEN SIN ENLACE -->
+                <img src="images/lentes-vintage.jpg" alt="Lentes de sol vintage" width="100%" style="border-radius:8px;">
+                <br><br>
+                <!-- IMAGEN CON ENLACE -->
+                <a href="https://www.ray-ban.com" target="_blank">
+                    <img src="images/lentes-modernos.jpg" alt="Lentes de sol modernos" width="100%" style="border-radius:8px;">
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- TABLA CON COLSPAN Y ROWSPAN -->
+    <h2 align="center">Evolución de Materiales</h2>
+    <table border="1" cellspacing="2" cellpadding="6" align="center">
+        <tr bgcolor="#e0e0e0">
+            <th>Año</th>
+            <th colspan="2">Material</th>
+            <th>Beneficio</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Años 1930</td>
+            <td colspan="2">Celuloide</td>
+            <td>Ligero, pero inflamable</td>
+        </tr>
+        <tr>
+            <td>1950&nbsp;s</td>
+            <td>Acetato</td>
+            <td>Mayor seguridad y moldeabilidad</td>
+        </tr>
+        <tr>
+            <td>2000&nbsp;s</td>
+            <td colspan="2">Policarbonato</td>
+            <td>Alta resistencia a impactos</td>
+        </tr>
+    </table>
+
+    <!-- BOTONES DE NAVEGACIÓN -->
+    <div align="center" style="margin-top:30px;">
+        <button onclick="window.location.href='page2.html'">Página 2: Tipos de Lentes</button>
+        <button onclick="window.location.href='index.html'">Inicio</button>
+    </div>
+
+  
+
+</body>
+</html>

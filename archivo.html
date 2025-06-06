@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lentes de Sol | Archivo de Modelos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset */
+        *{box-sizing:border-box;margin:0;padding:0}
+
+        body{
+            font-family:Helvetica,Arial,sans-serif;
+            line-height:1.6;
+            color:#222;
+            background:url('fondo.jpg') no-repeat center/cover fixed;
+            min-height:100vh;
+            display:flex;
+            flex-direction:column;
+        }
+        a{color:#0066cc;text-decoration:none}
+        a:hover{text-decoration:underline}
+
+        /* Navegación */
+        nav{
+            background:rgba(255,255,255,0.9);
+            backdrop-filter:blur(4px);
+            padding:16px 32px;
+            display:flex;
+            justify-content:center;
+            gap:32px;
+            position:sticky;
+            top:0;
+            z-index:10;
+            box-shadow:0 2px 8px rgba(0,0,0,0.1);
+        }
+        nav a{font-weight:600;}
+        nav a.active{color:#111;}
+
+        /* Hero */
+        .hero{
+            display:flex;
+            flex-wrap:wrap;
+            align-items:center;
+            justify-content:center;
+            gap:32px;
+            padding:64px 32px;
+            background:rgba(255,255,255,0.85);
+            margin:32px;
+            border-radius:16px;
+        }
+        .hero img{
+            width:340px;
+            max-width:90vw;
+            border-radius:12px;
+            box-shadow:0 4px 12px rgba(0,0,0,0.15);
+        }
+        .hero-content{max-width:540px;}
+        .hero h1{font-size:34px;margin-bottom:16px;color:#111}
+        .hero p{margin-bottom:20px}
+        .btn{
+            display:inline-block;
+            background:#0066cc;
+            color:#fff;
+            padding:12px 24px;
+            border-radius:8px;
+            font-weight:600;
+        }
+        .btn:hover{background:#004e9a}
+
+        /* Secciones */
+        section{
+            background:rgba(255,255,255,0.8);
+            margin:32px;
+            padding:32px;
+            border-radius:12px;
+        }
+        section h2{margin-bottom:16px;color:#111;text-align:center}
+
+        /* Tabla */
+        table{width:100%;border-collapse:collapse;margin-top:16px;font-size:15px}
+        th,td{padding:12px;border:1px solid #ccc;text-align:center;vertical-align:middle}
+        th{background:#e0e0e0}
+        td img{width:100px;border-radius:8px}
+
+        /* Galería */
+        .gallery{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:24px;
+            margin-top:24px;
+        }
+        .gallery a img{
+            width:100%;
+            border-radius:12px;
+            box-shadow:0 3px 8px rgba(0,0,0,0.15);
+            transition:transform 0.3s;
+        }
+        .gallery a img:hover{transform:scale(1.05);}
+
+        /* Video */
+        .video-wrapper{
+            width:100%;
+            max-width:800px;
+            margin:0 auto 16px auto;
+            box-shadow:0 3px 12px rgba(0,0,0,0.2);
+            border-radius:12px;
+            overflow:hidden;
+        }
+        video{width:100%;height:auto;display:block}
+
+        /* Footer */
+        footer{text-align:center;padding:16px;margin-top:auto;background:rgba(255,255,255,0.9);font-size:14px;}
+    </style>
+</head>
+<body>
+    <!-- Navegación -->
+    <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="modelos.html">Modelos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="archivo.html" class="active">Archivo</a>
+    </nav>
+
+    <!-- Marquee -->
+    <marquee behavior="scroll" direction="left" scrollamount="6" style="background:rgba(255,255,255,0.85);padding:8px 0;font-weight:600;">
+        Revive los íconos que marcaron historia: Aviator, Wayfarer, Persol 714, Dior So Real, y más. ¡Desliza y descubre nuestra colección retro!
+    </marquee>
+
+    <!-- Hero -->
+    <header class="hero">
+        <img src="ico.webp" alt="Colección histórica" />
+        <div class="hero-content">
+            <h1>Archivo de Modelos Legendarios</h1>
+            <p>
+                Un recorrido por los diseños más emblemáticos y prestigiosos que hemos colocado en manos de nuestros clientes a lo largo de los años.
+            </p>
+            <a href="modelos.html" class="btn">Ver Catálogo Actual</a>
+        </div>
+    </header>
+
+    <!-- Catálogo principal -->
+    <section id="catalogo">
+        <h2>Catálogo histórico destacado</h2>
+        <table>
+            <tr>
+                <th>Año</th>
+                <th>Modelo</th>
+                <th>Marca</th>
+                <th>Características</th>
+                <th>Imagen</th>
+            </tr>
+            <tr>
+                <td>1969</td>
+                <td>Aviator Classic</td>
+                <td>Ray-Ban</td>
+                <td>Lentes mineral con recubrimiento antirreflectante; marco metálico dorado</td>
+                <td><a href="https://www.ray-ban.com" target="_blank"><img src="rayviator.webp" alt="Ray-Ban Aviator"></a></td>
+            </tr>
+            <tr>
+                <td>1984</td>
+                <td>Wayfarer Original</td>
+                <td>Ray-Ban</td>
+                <td>Acetato negro, diseño trapezoidal icónico</td>
+                <td><a href="https://www.ray-ban.com" target="_blank"><img src="way.jpg" alt="Wayfarer"></a></td>
+            </tr>
+            <tr>
+                <td>1999</td>
+                <td>Persol 714 Foldable</td>
+                <td>Persol</td>
+                <td>Plegables con sistema Meflecto; lentes de cristal templado</td>
+                <td><a href="https://www.persol.com" target="_blank"><img src="per.jpeg" alt="Persol 714"></a></td>
+            </tr>
+            <tr>
+                <td>2012</td>
+                <td>So Real</td>
+                <td>Dior</td>
+                <td>Puente flotante, doble lente plana espejo</td>
+                <td><a href="https://www.dior.com" target="_blank"><img src="dio.jpg" alt="Dior So Real"></a></td>
+            </tr>
+            <tr>
+                <td>2021</td>
+                <td>Bio-Sustainable Future</td>
+                <td>SunGlasses Co.</td>
+                <td>Bioplástico reciclado, filtros fotocromáticos UV400</td>
+                <td><img src="bio.webp" alt="Modelo Bio Future"></td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Galería -->
+    <section>
+        <h2>Galería de Éxitos</h2>
+        <div class="gallery">
+            <a href="https://www.oakley.com" target="_blank"><img src="ok.jpg" alt="Oakley X-Metal"></a>
+            <a href="https://www.gucci.com" target="_blank"><img src="gc.webp" alt="Gucci Vintage"></a>
+            <a href="https://us.carreraworld.com/es" target="_blank"><img src="ch.webp" alt="Carrera Champion"></a>
+            <a href="https://www.mauijim.com" target="_blank"><img src="ma.webp" alt="Maui Jim Peahi"></a>
+        </div>
+    </section>
+
+    
+    <section>
+        <h2>Chanel Glasses</h2>
+        <div class="video-wrapper">
+            <video controls poster="video_thumb.jpg">
+                <source src="chanel.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 SunGlasses Co. | Desarrollado por Alexander
+    </footer>
+</body>
+</html>

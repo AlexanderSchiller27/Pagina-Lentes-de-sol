@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lentes de Sol | Modelos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset */
+        *{box-sizing:border-box;margin:0;padding:0}
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height:1.6;
+            color:#222;
+            background:url('fda.jpeg') center/cover fixed, #f5f9fc;
+            min-height:100vh;display:flex;flex-direction:column;
+        }
+        a{color:#005fa3;text-decoration:none}a:hover{text-decoration:underline}
+
+        /* Navegación */
+        nav{background:rgba(255,255,255,0.9);backdrop-filter:blur(4px);padding:16px 32px;display:flex;justify-content:center;gap:32px;position:sticky;top:0;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,0.1);}nav a{font-weight:600;}nav a.active{color:#111;}
+
+        /* Marquee */
+        .marquee{background:#bae6ff;padding:8px 0;font-weight:700;color:#0d3b66}
+
+        /* Galería */
+        .catalog{
+            margin:32px;
+        }
+        .catalog h1{font-size:28px;color:#0d3b66;text-align:center;margin-bottom:24px;}
+        .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px;}
+        .gallery a img{width:100%;border-radius:12px;box-shadow:0 3px 8px rgba(0,0,0,0.15);transition:transform 0.3s;}
+        .gallery a img:hover{transform:scale(1.05);}
+
+        /* Lists & Table */
+        .details{background:rgba(255,255,255,0.95);margin:32px;padding:32px;border-radius:12px;}
+        .details h2{text-align:center;margin-bottom:16px;color:#0d3b66;}
+        .flex-lists{display:flex;flex-wrap:wrap;gap:32px;justify-content:center;}
+        ul li{list-style-type:square;margin-left:20px;margin-bottom:6px;}
+        ol li{margin-left:20px;margin-bottom:6px;}
+        .price-table{width:100%;border-collapse:collapse;margin-top:24px;font-size:15px;}
+        .price-table th,.price-table td{border:1px solid #ccc;padding:10px;text-align:center;}
+        .price-table th{background:#e7f3ff;color:#0d3b66;}
+
+        /* CTA Hero Bottom */
+        .cta{
+            display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:32px;padding:48px 32px;background:rgba(255,255,255,0.85);margin:32px;border-radius:16px;
+        }
+        .cta img{width:320px;max-width:90vw;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.15);}
+        .cta-content{max-width:520px;}
+        .cta h3{font-size:26px;margin-bottom:12px;color:#0d3b66;}
+        .cta p{margin-bottom:20px;font-size:16px;}
+        .btn{display:inline-block;background:#005fa3;color:#fff;padding:12px 24px;border-radius:8px;font-weight:600;}
+        .btn:hover{background:#004276;}
+
+        footer{text-align:center;padding:16px;margin-top:auto;background:rgba(255,255,255,0.9);font-size:14px;}
+    </style>
+</head>
+<body>
+    <!-- Navegación -->
+    <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="modelos.html" class="active">Modelos</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="archivo.html">Archivo</a>
+    </nav>
+
+    <!-- Marquee -->
+    <marquee class="marquee" behavior="scroll" direction="left" scrollamount="7">Más de 50 marcas premium a tu alcance — si existe, lo conseguimos y mejoramos su precio ✨🕶️</marquee>
+
+    <!-- Catálogo principal -->
+    <section class="catalog" id="catalogo">
+        <h1>Catálogo 2025 · Top 12</h1>
+        <div class="gallery">
+            <!-- 12 imágenes con links -->
+            <a href="https://www.ray-ban.com" target="_blank"><img src="rayviator.webp" alt="Ray‑Ban Aviator"></a>
+            <a href="https://www.oakley.com" target="_blank"><img src="oak.webp" alt="Oakley Sutro"></a>
+            <a href="https://www.persol.com" target="_blank"><img src="per.jpeg" alt="Persol 714"></a>
+            <a href="https://www.dior.com" target="_blank"><img src="dio.jpg" alt="Dior So Real"></a>
+            <a href="https://www.gucci.com" target="_blank"><img src="gci.jpeg" alt="Gucci GG0707S"></a>
+            <a href="https://www.mauijim.com" target="_blank"><img src="mau.jpeg" alt="Maui Jim Peahi"></a>
+            <a href="https://www.carrera.com" target="_blank"><img src="ch.webp" alt="Carrera Champion"></a>
+            <a href="https://www.warbyparker.com" target="_blank"><img src="am.jpg" alt="Warby Parker Ames"></a>
+            <a href="https://www.boloneyewear.com" target="_blank"><img src="bl.webp" alt="Bolon Vintage"></a>
+            <a href="https://www.prada.com" target="_blank"><img src="prd.webp" alt="Prada PR17WS"></a>
+            <a href="https://www.tomford.com" target="_blank"><img src="tf.webp" alt="Tom Ford FT5401"></a>
+            <a href="https://www.gentlemonster.com" target="_blank"><img src="gm.jpeg" alt="Gentle Monster Her"></a>
+        </div>
+    </section>
+
+    <!-- Detalles y ahorro -->
+    <section class="details">
+        <h2>¿Cómo garantizamos el mejor precio?</h2>
+        <div class="flex-lists">
+            <!-- Lista numérica -->
+            <ol>
+                <li>Monitorizamos precios en 15 tiendas internacionales.</li>
+                <li>Negociamos volumen directamente con fabricantes.</li>
+                <li>Ofrecemos logística optimizada sin intermediarios.</li>
+                <li>Aplicamos nuestra política de igualación al instante.</li>
+            </ol>
+            <!-- Lista no numérica -->
+            <ul>
+                <li>Envío gratis y seguro.</li>
+                <li>Garantía de satisfacción 30 días.</li>
+                <li>Programa de recompensas para clientes frecuentes.</li>
+                <li>Soporte 24/7 en tu idioma.</li>
+            </ul>
+        </div>
+
+        <table class="price-table">
+            <tr><th>Modelo</th><th>PVP Oficial</th><th>Nuestro Precio</th><th>Ahorro</th></tr>
+            <tr><td>Ray‑Ban Aviator</td><td>$180</td><td>$162</td><td>-10%</td></tr>
+            <tr><td>Oakley Sutro</td><td>$214</td><td>$188</td><td>-12%</td></tr>
+            <tr><td>Dior So Real</td><td>$440</td><td>$395</td><td>-10%</td></tr>
+        </table>
+
+        <p style="text-align:center;margin-top:20px;font-size:15px;color:#555">¿Quieres aún más modelos? Visita nuestras alianzas: <a href="https://www.sunglasshut.com" target="_blank">Sunglass Hut</a> · <a href="https://www.smartbuyglasses.com" target="_blank">SmartBuyGlasses</a> · <a href="https://www.framesdirect.com" target="_blank">FramesDirect</a></p>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <img src="lnts.webp" alt="Diseña tus lentes" />
+        <div class="cta-content">
+            <h3>¿No encuentras tu modelo soñado?</h3>
+            <p>Envíanos una foto o referencia y nuestro equipo lo localizará o fabricará a medida, manteniendo el mejor precio del mercado.</p>
+            <a href="contacto.html" class="btn">Pedir Cotización</a>
+        </div>
+    </section>
+
+    <footer>&copy; 2025 SunGlasses Co. | Desarrollado por Alexander</footer>
+</body>
+</html>
